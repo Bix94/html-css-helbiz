@@ -1,0 +1,77 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+.header-top {
+  height: 80px;
+  line-height: 80px;
+}
+
+ul.navbar-menu li,
+ul.navbar-language li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* 1rem equivale al font specificato nel body,
+nel nostro caso 1rem 16px
+quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
+
+ul.navbar-menu li a,
+ul.navbar-language li a {
+  color: #343434;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header-top .logo {
+  vertical-align: middle;
+}
+
+ul.navbar-language :not(li:last-child) a {
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+/* jumbo */
+.jumbo {
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.jumbo h1 {
+  font-size: 32px;
+}
+
+.jumbo p {
+  margin: 10px 0;
+}
+
+.jumbo .testo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px){
+  .jumbo h1 {
+    font-size: 26px;
+  }
+}
