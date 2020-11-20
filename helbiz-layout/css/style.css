@@ -78,11 +78,49 @@ ul.navbar-language :not(li:last-child) a {
     font-size: 26px;
   }
 }
- #mobility {
+#family {
+  background-image: url(../img/sfondo.jpeg);
+  height: 400px ;
+}
+.boxfam{
+  background-color: white;
+  padding: 30px 30px;
+  height: 50%;
+  width: 30%;
+  margin-left: 35%;
+}
+.boxfam li{
+  display: inline;
+}
+#mobility {
    height: 600px;
    background-image: url(https://helbiz.com/_nuxt/img/scooter.f0a0397.jpg);
    background-repeat: no-repeat;
  }
+ /* WARNING: BONUS */
+#steps{
+  position: relative;
+}
+.cell{
+  position: relative;
+  z-index: 3;
+  margin-top: 200px
+}
+
+.steps-top{
+  background-image: url(https://helbiz.com/_nuxt/img/index-banner.1f6fd0a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.steps-bot{
+  height: 300px;
+  background-color: white;
+}
+
+
+
+
 
 .col-lg-6 li {
    display: inline;
@@ -91,7 +129,6 @@ ul.navbar-language :not(li:last-child) a {
 .tcw{
   color: white;
 }
-
 .appdx{
   background-image: url(https://www.cleanbnb.net/wp-content/uploads/2020/02/affitti-brevi-firenze.jpg);
   background-repeat: no-repeat;
@@ -105,17 +142,7 @@ ul.navbar-language :not(li:last-child) a {
 .phone{
   margin-top: 80px;
 }
-
-
-
-
-
 footer{
   background-color: black;
   height: 700px;
-}
-
-.btn{
-  border-color: 1px solid white;
-  border-radius: 5px
 }
