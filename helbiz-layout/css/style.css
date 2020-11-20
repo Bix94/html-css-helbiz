@@ -2,17 +2,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size:16px;
 }
-
+main{
+  line-height: 40px;
+}
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 h5{
   text-transform: uppercase;
+  font-size: 25px;
+}
+hr{
+  margin: 30px 0;
+}
+/* MARGINI */
+.mt-30{
+  margin-top: 30px;
+}
+.mt-50{
+  margin-top: 50px;
 }
 /* header */
 .header-top {
@@ -91,16 +102,19 @@ ul.navbar-language :not(li:last-child) a {
 }
 .boxfam li{
   display: inline;
+   padding-right: 10px;
 }
 #mobility {
    height: 600px;
    background-image: url(https://helbiz.com/_nuxt/img/scooter.f0a0397.jpg);
    background-repeat: no-repeat;
+
  }
  /* WARNING: BONUS */
 #steps{
   position: relative;
 }
+
 .cell{
   position: relative;
   z-index: 3;
@@ -140,9 +154,18 @@ ul.navbar-language :not(li:last-child) a {
   background-color: #364757
 }
 .phone{
-  margin-top: 80px;
+  margin-top: 30px;
 }
 footer{
   background-color: black;
   height: 700px;
+  line-height: 30px;
 }
+.socialist li{
+  display: inline;
+  padding-right: 7px;
+}
+
+/* li ul .col .helbizlist:first-child{
+  text-transform: uppercase;
+} */
