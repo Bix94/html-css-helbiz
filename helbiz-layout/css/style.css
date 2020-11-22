@@ -30,10 +30,6 @@ ul.navbar-language li {
   padding-right: 10px;
 }
 
-/* 1rem equivale al font specificato nel body,
-nel nostro caso 1rem 16px
-quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
-
 ul.navbar-menu li a,
 ul.navbar-language li a {
   color: #343434;
@@ -41,16 +37,13 @@ ul.navbar-language li a {
   font-weight: 600;
   font-size: 14px;
 }
-
 .header-top .logo {
   vertical-align: middle;
 }
-
 ul.navbar-language :not(li:last-child) a {
   border-right: 2px solid black;
   padding-right: 10px;
 }
-
 /* jumbo */
 .jumbo {
   background-image: url('../img/hero-bg.jpg');
@@ -93,27 +86,18 @@ ul.navbar-language :not(li:last-child) a {
 .boxfam{
  background-color: white;
  padding: 50px 50px;
- height: 50%;
- width: 30%;
+ height: 190px;
+ width: 400px;
  margin-left: 35%;
 }
 #mobility {
    height: 600px;
    background-image: url(https://helbiz.com/_nuxt/img/scooter.f0a0397.jpg);
    background-repeat: no-repeat;
-
  }
- /* WARNING: BONUS */
-#steps{
-  position: relative;
-}
-
 .cell{
-  position: relative;
-  z-index: 3;
   margin-top: 130px
 }
-
 .steps-top{
   background-image: url(https://helbiz.com/_nuxt/img/index-banner.1f6fd0a.jpg);
   background-repeat: no-repeat;
@@ -123,7 +107,6 @@ ul.navbar-language :not(li:last-child) a {
 .steps-bot{
  height: 300px;
 }
-
 .col-lg-6 li {
    display: inline;
    padding-right: 10px;
@@ -131,6 +114,13 @@ ul.navbar-language :not(li:last-child) a {
 .tcw{
   color: white;
 }
+@media screen and (max-width: 992px){
+  .pp {
+    padding-right: 0%;
+    padding-left: 0%
+  }
+}
+
 .appdx{
   background-image: url(https://www.cleanbnb.net/wp-content/uploads/2020/02/affitti-brevi-firenze.jpg);
   background-repeat: no-repeat;
@@ -146,18 +136,30 @@ ul.navbar-language :not(li:last-child) a {
 }
 footer{
   background-color: black;
-  height: 700px;
+  height: 900px;
   line-height: 30px;
 }
 .socialist li{
   display: inline;
   padding-right: 7px;
 }
-
 /* li ul .col .helbizlist:first-child{
   text-transform: uppercase;
 } */
 .lh{
   line-height: 50px;
   padding-top: 10px;
+}
+.mt-120{
+  margin-top: 120px;
+}
+@media screen and (max-width:992px){
+.cell{
+  margin-top: 0px;
+}
+}
+@media screen and (max-width:769px){
+.fam{
+  margin-left:25%; 
+}
 }
